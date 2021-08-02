@@ -307,6 +307,7 @@
     height: 100%;
     padding: 0.5rem 0;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .services h1 {
@@ -317,7 +318,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 .servicesWrapper {
@@ -347,7 +348,18 @@
 }
 
 .servicesCard:nth-child(3) {
-    background-image: linear-gradient(-225deg , #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100% ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.servicesCard:nth-child(4) {
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
 }
 
 .servicesCard h2 {
@@ -364,6 +376,7 @@
     display: flex;
     justify-content: center;
     margin-top: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .servicesCard button {
@@ -374,6 +387,7 @@
     outline: none;
     border-radius: 4px;
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .servicesCard button:hover {
